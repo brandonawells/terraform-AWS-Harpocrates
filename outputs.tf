@@ -14,6 +14,10 @@ output "aws_kms_arn" {
   value = "${aws_kms_key.kms-key.arn}"
 }
 
+output "aws_kms_key_id" {
+  value = "${aws_kms_key.kms-key.key_id}"
+}
+
 output "role_kms_admin_arn" {
   value = "${aws_iam_role.kms-admin.arn}"
 }
